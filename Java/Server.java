@@ -20,7 +20,6 @@ public class Server {
 
                     String methodName = (String) in.readObject();
                     Object[] argsArray = (Object[]) in.readObject();
-                    System.out.println(methodName);
 
                     Object result;
                     switch (methodName) {
@@ -29,6 +28,7 @@ public class Server {
                             break;
                         case "divide":
                             result = divide((int) argsArray[0], (int) argsArray[1]);
+                            System.out.println(result);
                             break;
                         case "echo":
                             String message = (String) argsArray[0];
@@ -40,8 +40,6 @@ public class Server {
                     out.writeObject(result);
                     out.flush();
                 }
-            } catch (Exception e) {
-                System.out.println("Error: " + e.getMessage());
             } finally {
                 in.close();
                 out.close();
@@ -54,15 +52,15 @@ public class Server {
     // Do not modify any code below tihs line
     // --------------------------------------
     public static String echo(String message) {
-        System.out.println(message);
+//        System.out.println(message);
         return "You said " + message + "!";
     }
     public static int add(int lhs, int rhs) {
-        System.out.println(lhs + rhs);
+//        System.out.println(lhs + rhs);
         return lhs + rhs;
     }
     public static int divide(int num, int denom) {
-        System.out.println(num / denom);
+//        System.out.println(num / denom);
         if (denom == 0)
             throw new ArithmeticException();
 

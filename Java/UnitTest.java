@@ -1,7 +1,7 @@
 package org.example;
 
 public class UnitTest {
-    public static void main(String... args) {
+    public static void main(String... args) throws Exception{
         System.out.print("Testing... ");
 
         if (Client.add(2, 4) == 6)
