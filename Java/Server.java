@@ -27,7 +27,11 @@ public class Server {
                             result = add((int) argsArray[0], (int) argsArray[1]);
                             break;
                         case "divide":
-                            result = divide((int) argsArray[0], (int) argsArray[1]);
+                            try {
+                                result = divide((int) argsArray[0], (int) argsArray[1]);
+                            } catch (Exception e) {
+                                result = "Exception";
+                            }
                             System.out.println(result);
                             break;
                         case "echo":
@@ -52,15 +56,12 @@ public class Server {
     // Do not modify any code below tihs line
     // --------------------------------------
     public static String echo(String message) {
-//        System.out.println(message);
         return "You said " + message + "!";
     }
     public static int add(int lhs, int rhs) {
-//        System.out.println(lhs + rhs);
         return lhs + rhs;
     }
     public static int divide(int num, int denom) {
-//        System.out.println(num / denom);
         if (denom == 0)
             throw new ArithmeticException();
 

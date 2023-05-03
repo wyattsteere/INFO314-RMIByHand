@@ -21,6 +21,9 @@ public class Client {
      */
     public static int divide(int num, int denom) throws Exception{
         Object result = sendRequest("divide", new Object[]{num, denom});
+        if (result.equals("Exception")) {
+            throw new ArithmeticException();
+        }
         int intResult = (int) result;
 
         return intResult;
@@ -30,7 +33,7 @@ public class Client {
      */
     public static String echo(String message) throws Exception{
         Object result = sendRequest("echo", new Object[]{(message)});
-       String stresult = (String) result;
+        String stresult = (String) result;
         return stresult;
     }
 
@@ -56,7 +59,7 @@ public class Client {
     public static final int PORT = 10314;
 
     public static void main(String... args) throws Exception {
-
+        try {
             socket = new Socket("localhost", 10314);
             out = new ObjectOutputStream(socket.getOutputStream());
             in = new ObjectInputStream(socket.getInputStream());
@@ -97,13 +100,16 @@ public class Client {
             out.close();
             socket.close();
             System.out.println("Disconnected from server.");
+        } catch (ConnectException e) {
+            System.out.println("Error: Connection Refused");
+        }
 
 
     }
 
 
 
-        // All of the code below this line must be uncommented
-        // to be successfully graded.
+    // All of the code below this line must be uncommented
+    // to be successfully graded.
 
 }
