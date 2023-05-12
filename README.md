@@ -1,4 +1,9 @@
 # INFO314-RMIByHand
+
+Was not able to finish, client sees internal server error 500 even though postman works fine. I was not able to test interoperability because my group members have not finished yet. 
+Thank you for all your help Eric! 
+
+
 Greetings!
 
 In this homework assignment, you are going to implement a primitive distributed object system: Client code will be able to execute a procedure (static method) on a remote server and receive the response. This assignment assumes you will write Java.
