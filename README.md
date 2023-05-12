@@ -2,6 +2,9 @@
 
 Was not able to finish, client sees internal server error 500 even though postman works fine. Would love to work in office hours and finish even if it won't count for credit, I feel like I am close. My group members have not finished so I was not able  to test interoperability even if I did finish. 
 Thank you for all your help Eric! 
+<img width="664" alt="image" src="https://github.com/wyattsteere/INFO314-RMIByHand/assets/94156893/4316dcf7-36f9-439f-8a42-96628e81e936">
+<img width="650" alt="image" src="https://github.com/wyattsteere/INFO314-RMIByHand/assets/94156893/bc7131ee-44e2-4c89-93af-b727501afcc4">
+
 
 
 Greetings!
