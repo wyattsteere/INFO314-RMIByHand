@@ -1,6 +1,6 @@
 # INFO314-RMIByHand
 
-Was not able to finish, client sees internal server error 500 even though postman works fine. I was not able to test interoperability because my group members have not finished yet. 
+Was not able to finish, client sees internal server error 500 even though postman works fine. Would love to work in office hours and finish even if it won't count for credit, I feel like I am close. My group members have not finished so I was not able  to test interoperability even if I did finish. 
 Thank you for all your help Eric! 
 
 
